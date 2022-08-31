@@ -101,7 +101,7 @@ _S merumontanus_:
 **Questions** how remote are our samples to the _S merumontanus_ and its 'junior synonyms'?
 
 
-## Samples
+## Sample Data
 
 #### Identifiers
 
@@ -161,13 +161,23 @@ These analyses were done:
 
  * **mapping** and prevalence counting with KMA of the trimmed reads on:
    frog mitochondria, frog DNA and mitochondria, mitochondria, Silva.
-   The `mapstats` files are copied here, except Silva (too diffuse).
+   The `mapstats` files are copied here (except Silva, too diffuse).
    
  * **assembly** using `bbnorm` for normalisation and (missing) `tadpole.sh`,
    then `SPAdes`, then `Unicycler`.  The latter had good results.
 
  * **phylogeny** (using `mrbayes` missing?) of whole mtDNA with ranoidea,
-   see the `.dnd` Newick files, and `input_msa.fasta`.  Unsure how the
-   Nexus files were generated (ClustalW?)
+   see the `.dnd` Newick files,  Unsure how the Nexus files were generated
+   (ClustalW?)
+
+
+## Analyses
+
+### Assembly
+
+We try multiple assemblies: with trimmed vs raw reads, and with the technical
+replicates merged vs separate.
+
+TODO: map raw (rather than trimmed) reads on assemblies.
 
 

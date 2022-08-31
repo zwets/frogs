@@ -1,0 +1,60 @@
+﻿Strongylopus cf. merumontanus (1)
+DZ 028
+Tadpole collected 23 May 2020 at the Nading’oro Bog, 
+western slopes of Mt. Meru, at 2540m.
+
+Strongylopus cf. merumontanus (1)
+DZ 029
+Tadpole collected 23 May 2020 at the Nading’oro Bog, 
+western slopes of Mt. Meru, at 2540m.
+
+Phrynobatrachus sp. ?nov.
+DZ 043
+Collected 27 May 2020 at the Seneto Village Pool, 
+eastern boundary of Arusha National Park, at 1590m.
+
+Phrynobatrachus sp. ?nov.
+DZ 046
+Collected 28 May 2020 at Hatari Lodge, 
+northern Arusha National Park, at 1545m.
+
+Strongylopus cf. kilimanjaro
+DZ 052
+Tadpole collected 01 Jun 2020 at the Maraa River,
+southern slopes of Mt. Kilimanjaro, at 1775m.
+
+Phrynobatrachus cf. mababiensis ‘C’
+DZ 07?
+Collected 05 Jun 2020 at Kisima Ngeda Lodge,
+northern shores of Lake Eyasi, at 1040m.
+
+Strongylopus cf. merumontanus (2)
+DZ 085
+Tadpole collected 06 Jun 2020 at the Fig Tree Arch wetland,
+eastern slopes of Mt. Meru, at 1932m.
+
+Strongylopus sp. ???nov. – Ketumbeine
+DZ 097
+Collected 10 Jun 2020 at the Pananik Stream,
+northern slopes of Mt. Ketumbeine, at 2233m.
+
+Strongylopus sp. ?nov. – Gelai 
+DZ 111
+Collected 12 Jun 2020 at the Seneto Stream,
+southern slopes of Mt. Gelai, at 2178m.
+
+Strongylopus sp. ?nov. – Gelai 
+DZ 120
+Tadpole collected 13 Jun 2020 at the Laitip Stream,
+south-western slopes of Mt. Gelai, at 2596m.
+
+
+Notes Donyo
+
+Here’s a doc with the locality and genus info for all the samples.
+The Phryno is off course most probably new, though Breda Zimkus still hasn’t replied (even though Michele Menegon has reminded her). The Strongylopus from Gelai is probably also new, not just because of isolation and morphometrical differences, but also because of good evidence suggesting that the specimens we collected (which are anyway record sizes for the entire genus) are males, meaning that the females would be even bigger. The individual we collected on Ketumbeine is confusing – it looks like the described species from Ketumbeine but morphometrically it is very different and much closer to the eastern arc species S. fuelleborni. Sadly there is no genetic data available for S. kitumbeine sensu strictu. 
+We included the Phryno from Eyasi, which we think belongs to Zimkus’s mababiensis ‘clade c’, for comparison. 
+The Strongylopus tadpoles from Mt. Meru and Kilimanjaro are also a bit confusing. At present three forms are thought to occur on Kili, S. kilimanjaro (described from three specimens collected in the 1930’s), a sleek form that morphometrically resembles fuelleborni, and a completely undescribed species which was collected in 2005 by Michele (only one specimen though) which is spotted like the frogs from Gelai and Ketumbeine. So we can’t be completely sure to which of these our tadpole belongs to.
+The entire Strongylopus confusion originates on Mt. Meru, and we hoped to at least genetically prove that the species on Meru is not the same as fuelleborni, as has been disputed for the past 100 years. I differentiated the first two Meru samples from the third as the tadpoles did look different to each other, this could have something to do with the life stage, as the first two from the western slopes already had legs and the third from the east didn’t, but I guess the sequencing will answer this.
+Only fuelleborni is already on genbank by the way.
+
