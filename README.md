@@ -178,6 +178,17 @@ These analyses were done:
 We try multiple assemblies: with trimmed vs raw reads, and with the technical
 replicates merged vs separate.
 
+### Polishing
+
 TODO: map raw (rather than trimmed) reads on assemblies.
 
+### Mitochondrion
+
+TODO: check GFA
+TODO: polypolish the mitochondrion as if it were a long read?
+TODO: map raw reads on largest contig
+
+### Genes / Loci
+
+TODO: references from the phryno and strongy papers
 
