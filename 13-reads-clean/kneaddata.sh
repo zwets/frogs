@@ -15,10 +15,10 @@ ID="$3"
 mkdir -p "$OUT_DIR"
 
 # Run kneaddata on PE
-kneaddata -i1 ${IN_DIR}/${ID}_R1.fq -i2 ${IN_DIR}/${ID}_R2.fq -o ./paired -db /data/genomics/screen-dbs/univec --bypass-trf --bypass-trim -p 4 -t 4
+/hpc/bin/kneaddata -i1 ${IN_DIR}/${ID}_R1.fq -i2 ${IN_DIR}/${ID}_R2.fq -o ./paired -db /data/genomics/screen-dbs/univec --bypass-trf --bypass-trim -p 4 -t 4
 
 # Run kneaddata on SE
-kneaddata -un ${IN_DIR}/${ID}_UN.fq -o ./single -db /data/genomics/screen-dbs/univec --bypass-trf --bypass-trim -p 4 -t 4
+/hpc/bin/kneaddata -un ${IN_DIR}/${ID}_UN.fq -o ./single -db /data/genomics/screen-dbs/univec --bypass-trf --bypass-trim -p 4 -t 4
 
 # Unfuck kneaddata header mangling while copying to OUT_DIR
 # - it turns this: @NB502092:190:HTLGMAFX2:1:11101:18093:1057 1:N:0:GTAGAGGA+NAAGGCTC
