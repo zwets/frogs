@@ -1,0 +1,46 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = kneaddata
+
+# Params
+IN_DIR = /hpc/users/zwets/analyses/frogs/12-reads-trim
+# ID is queued below
+
+request_cpus = 16
+request_memory = 10GB
+request_disk = 8GB
+
+# Executable is ./kneaddata.sh script, will be transferred
+executable = kneaddata.sh
+arguments = "'$(IN_DIR)' output $(ID)"
+
+# No input file transfer, IN_DIR is on /hpc
+#transfer_input_files = 
+# Transfer generated files
+transfer_output_files = output/
+
+output = job.$(ID).out
+error = job.$(ID).err
+log = condor.log
+
+queue ID from (
+    QDK21_DZ028-1
+    QDK21_DZ028-2
+    QDK21_DZ029-1
+    QDK21_DZ029-2
+    QDK21_DZ043-1
+    QDK21_DZ043-2
+    QDK21_DZ046-1
+    QDK21_DZ046-2
+    QDK21_DZ052-1
+    QDK21_DZ052-2
+    QDK21_DZ085-1
+    QDK21_DZ085-2
+    QDK21_DZ097-1
+    QDK21_DZ097-2
+    QDK21_DZ111-1
+    QDK21_DZ111-2
+    QDK21_DZ120-1
+    QDK21_DZ120-2
+)
+

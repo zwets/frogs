@@ -1,0 +1,61 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = fastp
+
+# Parameters
+IN_DIR = /hpc/data/genomics/kcri/reads/raw/QDK21
+OUT_DIR = /hpc/users/zwets/analyses/frogs/12-reads-trim
+CPU = 16
+
+request_cpus = $(CPU)
+request_memory = 8GB
+request_disk = 1GB
+
+# Run on Turing to save on all the copying
+requirements = Machine =?= "turing.kcri.it"
+
+transfer_executable = False
+executable = /usr/bin/fastp
+
+# Variables
+IN_FQ1 = $(IN_DIR)/$(ID)_R1.fq.gz
+IN_FQ2 = $(IN_DIR)/$(ID)_R2.fq.gz
+OUT_FQ1 = $(OUT_DIR)/$(ID)_R1.fq
+OUT_FQ2 = $(OUT_DIR)/$(ID)_R2.fq
+OUT_FQU = $(OUT_DIR)/$(ID)_UN.fq
+OUT_HTML = $(OUT_DIR)/$(ID).html
+ADAPTERS = $(OUT_DIR)/adapters.fna
+
+arguments = "--thread $(CPU) --in1 '$(IN_FQ1)' --in2 '$(IN_FQ2)' --out1 '$(OUT_FQ1)' --out2 '$(OUT_FQ2)' --unpaired1 '$(OUT_FQU)' --html '$(OUT_HTML)' --adapter_fasta '$(ADAPTERS)' --trim_poly_g --cut_front --cut_tail --trim_tail1 1 -l 36"
+
+# No input transfers
+#transfer_input_files = /path/to/inputs, another/path
+#should_transfer_files = NO
+#when_to_transfer_output = ON_EXIT
+#transfer_output_files = output/, results.tab
+
+#output = job.$(ID).out
+error = $(ID).log
+log = condor.log
+
+queue ID from (
+    QDK21_DZ028-1
+    QDK21_DZ028-2
+    QDK21_DZ029-1
+    QDK21_DZ029-2
+    QDK21_DZ043-1
+    QDK21_DZ043-2
+    QDK21_DZ046-1
+    QDK21_DZ046-2
+    QDK21_DZ052-1
+    QDK21_DZ052-2
+    QDK21_DZ085-1
+    QDK21_DZ085-2
+    QDK21_DZ097-1
+    QDK21_DZ097-2
+    QDK21_DZ111-1
+    QDK21_DZ111-2
+    QDK21_DZ120-1
+    QDK21_DZ120-2
+)
+

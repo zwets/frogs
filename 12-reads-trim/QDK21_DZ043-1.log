@@ -1,0 +1,41 @@
+Read1 before filtering:
+total reads: 1799043
+total bases: 254720547
+Q20 bases: 230968752(90.6754%)
+Q30 bases: 218798711(85.8976%)
+
+Read2 before filtering:
+total reads: 1799043
+total bases: 254732489
+Q20 bases: 227075815(89.1429%)
+Q30 bases: 211504711(83.0301%)
+
+Read1 after filtering:
+total reads: 1680778
+total bases: 225770228
+Q20 bases: 213122352(94.3979%)
+Q30 bases: 203500413(90.1361%)
+
+Read2 aftering filtering:
+total reads: 1680778
+total bases: 225360355
+Q20 bases: 211114362(93.6786%)
+Q30 bases: 198465941(88.066%)
+
+Filtering result:
+reads passed filter: 3361556
+reads failed due to low quality: 193566
+reads failed due to too many N: 64
+reads failed due to too short: 42900
+reads with adapter trimmed: 244417
+bases trimmed due to adapters: 9889100
+
+Duplication rate: 3.49255%
+
+Insert size peak (evaluated by paired-end reads): 147
+
+JSON report: fastp.json
+HTML report: /hpc/users/zwets/analyses/frogs/12-reads-trim/QDK21_DZ043-1.html
+
+/usr/bin/fastp --thread 16 --in1 /hpc/data/genomics/kcri/reads/raw/QDK21/QDK21_DZ043-1_R1.fq.gz --in2 /hpc/data/genomics/kcri/reads/raw/QDK21/QDK21_DZ043-1_R2.fq.gz --out1 /hpc/users/zwets/analyses/frogs/12-reads-trim/QDK21_DZ043-1_R1.fq --out2 /hpc/users/zwets/analyses/frogs/12-reads-trim/QDK21_DZ043-1_R2.fq --unpaired1 /hpc/users/zwets/analyses/frogs/12-reads-trim/QDK21_DZ043-1_UN.fq --html /hpc/users/zwets/analyses/frogs/12-reads-trim/QDK21_DZ043-1.html --adapter_fasta /hpc/users/zwets/analyses/frogs/12-reads-trim/adapters.fna --trim_poly_g --cut_front --cut_tail --trim_tail1 1 -l 36 
+fastp v0.20.1, time used: 26 seconds

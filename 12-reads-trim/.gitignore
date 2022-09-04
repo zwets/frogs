@@ -1,0 +1,5 @@
+!/*.log
+!/adapters.fna
+/*.html
+/fastp.json
+/condor.log
