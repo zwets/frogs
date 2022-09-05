@@ -3,11 +3,11 @@
 jobbatchname = kma-polish
 
 # Params
-#REF = ref-029.fna
-REF = ref-111.fna
+REF = ref-029.fna
+#REF = ref-111.fna
 IN_DIR = ../10-reads-raw
-#OUT_DIR = MAP_$(ID)_029
-OUT_DIR = MAP_$(ID)_111
+OUT_DIR = MAP_$(ID)_029
+#OUT_DIR = MAP_$(ID)_111
 
 # Variables
 FQ1 = $(IN_DIR)/QDK21_$(ID)_R1.fq.gz
