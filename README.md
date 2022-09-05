@@ -184,6 +184,44 @@ TODO: map raw (rather than trimmed) reads on assemblies.
 
 ### Mitochondrion
 
+Most Animal kingdom mitochondrion is circular, 11-28kbp DNA with no introns that
+is uniparentally inherited.  The H-strand is heavier than the L-strand due to
+purine (AG) richness.
+
+**Human mtDNA**
+
+Human mtDNA is 16,569bp and codes for 13 proteins, all for the oxidative
+phosphorylation system.  The H-strand codes for 12 (2 ATP synthase subunits,
+3 Cytochrome c oxidase, 1 Cytochrome b, 6 NADH dehydrogenase), plus two
+ribosomal RNAs (SSU 12S, LSU 16S), and 14 tRNA (RDGHIL1L2KMFS1TWV).  The
+L-strand codes for 1 protein (NADH subunit 6), and 8 tRNA (ANCEQPS2Y).
+
+Reference (rCRS = revised Cambridge Reference Sequence) for the human mt genome
+is `NC_012920.1` (see in 00-reference, and <https://www.mitomap.org/MITOMAP/>):
+
+ * 1..576 complement is start of the D-loop (control region)
+ * 577..647 `TRNF`, _tRNA-Phe_
+ * 648..1601 `RNR1`, _s-rRNA_ (SSU, 12S rRNA)
+ * 1602..1670 `TRNV`, _tRNA-Val_
+ * 1671..3229 `RNR2`, _l-rRNA_ (LSU, 16S rRNA)
+   Note 3107 is historical spacer
+ * 3230..3304 `TRNL1`, _rRNA-Leu 1_ (UUA/G)
+ * 3307..4262 `ND1`, _NADH dehydrogenase subunit 1_
+ * ...
+ * 14747..15887 `CYTB`, product _cytochrome b_ (3' A added to complete TAA stop codon)
+ * 15888..15953 `TRNT`, _tRNA-Thr_
+ * 15956..16023 (complement) `TRNP`, _tRNA-Pro_
+ * 16024..16569 (complement) is end of the control region / D-loop (starts 1..576 comp)
+
+**Control Region / D-loop / DLP**
+
+The D-loop and adjacent transciption promoter regions form the DLP/CR (though often
+called D-loop).  In it the origin of replication of the H-strand, and origin of
+transcription of both strands.
+
+It is most polymorphic of human mt, but polymorphy concentrates in hypervariable
+regions (HV I, II, III), with secondary structure retained.
+
 TODO: check GFA
 TODO: polypolish the mitochondrion as if it were a long read?
 TODO: map raw reads on largest contig
