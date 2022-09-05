@@ -1,0 +1,52 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = unicycler
+
+# Params
+#IN_DIR = /hpc/users/zwets/analyses/frogs/13-reads-clean
+IN_DIR = ../13-reads-clean
+START_GENES = TRNL.faa
+CPU = 32
+
+request_cpus = $(CPU)
+request_memory = 100GB
+request_disk = 20GB
+
+executable = /hpc/bin/unicycler
+transfer_executable = False
+
+getenv = PATH
+arguments = "-t $(CPU) -o output --mode bold -1 '$Fnx(IN_FQ1)' -2 '$Fnx(IN_FQ2)' -s '$Fnx(IN_FQU)' --start_genes '$(START_GENES)' --start_gene_id 80.0 --spades_path /hpc/bin/spades.py"
+
+IN_FQ1 = $(IN_DIR)/$(ID)_R1.fq
+IN_FQ2 = $(IN_DIR)/$(ID)_R2.fq
+IN_FQU = $(IN_DIR)/$(ID)_UN.fq
+
+transfer_input_files = $(IN_FQ1), $(IN_FQ2), $(IN_FQU), $(START_GENES)
+transfer_output_files = output/assembly.fasta, output/assembly.gfa
+transfer_output_remaps = "assembly.fasta = $(ID).fasta ; assembly.gfa = $(ID).gfa"
+
+output = $(ID).out
+error = $(ID).err
+log = condor.log
+
+queue ID from (
+    QDK21_DZ028-1
+    QDK21_DZ028-2
+    QDK21_DZ029-1
+    QDK21_DZ029-2
+    QDK21_DZ043-1
+    QDK21_DZ043-2
+    QDK21_DZ046-1
+    QDK21_DZ046-2
+    QDK21_DZ052-1
+    QDK21_DZ052-2
+    QDK21_DZ085-1
+    QDK21_DZ085-2
+    QDK21_DZ097-1
+    QDK21_DZ097-2
+    QDK21_DZ111-1
+    QDK21_DZ111-2
+    QDK21_DZ120-1
+    QDK21_DZ120-2
+)

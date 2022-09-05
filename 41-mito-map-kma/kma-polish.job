@@ -1,0 +1,49 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = kma-polish
+
+# Params
+REF = DZ029-1-MT.fna
+#REF = DZ111-1-MT.fna
+#REF = DZ085-2-part.fna
+IN_DIR = ../10-reads-raw
+OUT_DIR = MAP_$(ID)_029
+
+# Variables
+FQ1 = $(IN_DIR)/QDK21_$(ID)_R1.fq.gz
+FQ2 = $(IN_DIR)/QDK21_$(ID)_R2.fq.gz
+
+request_cpus = 4
+request_memory = 20GB
+request_disk = 10GB
+
+executable = kma-polish.sh
+arguments = "'$(OUT_DIR)' '$(REF)' '$Fnx(FQ1)' '$Fnx(FQ2)'"
+
+transfer_input_files = $(REF), $(FQ1), $(FQ2)
+transfer_output_files = $(OUT_DIR)
+
+#output = $(ID).out
+#error = $(ID).err
+log = condor.log
+
+queue ID from (
+    DZ028-1
+    DZ028-2
+    DZ029-1
+    DZ029-2
+    DZ043-1
+    DZ043-2
+    DZ046-1
+    DZ046-2
+    DZ052-1
+    DZ052-2
+    DZ085-1
+    DZ085-2
+    DZ097-1
+    DZ097-2
+    DZ111-1
+    DZ111-2
+    DZ120-1
+    DZ120-2
+)
