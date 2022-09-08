@@ -1,0 +1,18 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = fasttree
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 500MB
+
+transfer_executable = False
+executable = /usr/bin/fasttree
+
+arguments = "-nt -nopr -rawdist -makematrix"
+input = ../30-ssu-align/trimmed.fna
+output = rawdist.mat
+#error = rawdist.err
+#log = condor.log
+
+queue
