@@ -1,0 +1,19 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = clearcut
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 100MB
+
+transfer_executable = False
+executable = /usr/bin/clearcut
+
+arguments = "--in=aligned.fna -a -D -m clearcut.mat --out=clearcut.tree"
+transfer_input_files = ../10-mito-align/aligned.fna
+
+#output = 
+error = job.err
+#log = condor.log
+
+queue
