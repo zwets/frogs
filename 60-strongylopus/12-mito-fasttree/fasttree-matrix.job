@@ -1,0 +1,18 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = fasttree
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 500MB
+
+transfer_executable = False
+executable = /usr/bin/fasttree
+
+arguments = "-nt -nopr -makematrix"
+input = ../10-mito-align/aligned.fna
+output = fasttree.mat
+#error = matrix.err
+#log = condor.log
+
+queue

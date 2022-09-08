@@ -1,0 +1,20 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = fasttree
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 500MB
+
+transfer_executable = False
+executable = /usr/bin/fasttree
+
+arguments = "-nt -nopr -gtr"
+
+input = ../10-mito-align/aligned.fna
+#should_transfer_files = YES
+output = fasttree.tree
+error = fasttree.err
+#log = condor.log
+
+queue
