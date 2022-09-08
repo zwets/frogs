@@ -1,0 +1,40 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = kma-polish
+
+# Params
+REF = ref-029.fna
+#REF = ref-111.fna
+IN_DIR = ../10-reads-raw-joined
+OUT_DIR = ALL_$(ID)_029
+#OUT_DIR = ALL_$(ID)_111
+
+# Variables
+FQ1 = $(IN_DIR)/QDK21_$(ID)_R1.fq
+FQ2 = $(IN_DIR)/QDK21_$(ID)_R2.fq
+
+request_cpus = 4
+request_memory = 20GB
+request_disk = 10GB
+
+executable = kma-polish.sh
+arguments = "'$(OUT_DIR)' '$(REF)' '$Fnx(FQ1)' '$Fnx(FQ2)'"
+
+transfer_input_files = $(REF), $(FQ1), $(FQ2)
+transfer_output_files = $(OUT_DIR)
+
+#output = $(ID).out
+#error = $(ID).err
+log = condor.log
+
+queue ID from (
+    DZ028
+    DZ029
+    DZ043
+    DZ046
+    DZ052
+    DZ085
+    DZ097
+    DZ111
+    DZ120
+)
