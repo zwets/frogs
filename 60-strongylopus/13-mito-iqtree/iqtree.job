@@ -1,0 +1,19 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = fasttree
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 500MB
+
+transfer_executable = False
+executable = /usr/bin/iqtree2
+
+arguments = "--seqtype DNA -m GTR -s aligned.phy --prefix ./iqtree"
+
+transfer_input_files = ../10-mito-align/aligned.phy
+#output = 
+#error = iqtree.err
+#log = condor.log
+
+queue
