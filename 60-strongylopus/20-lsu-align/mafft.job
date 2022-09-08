@@ -1,0 +1,19 @@
+#!/usr/bin/condor_submit
+
+jobbatchname = mafft
+
+request_cpus = 1
+request_memory = 10GB
+request_disk = 100MB
+
+transfer_executable = False
+executable = /usr/bin/mafft
+
+arguments = "--globalpair --maxiterate 1000 unaligned.fna"
+transfer_input_files = unaligned.fna
+
+output = aligned.fna
+error = mafft.out
+#log = condor.log
+
+queue

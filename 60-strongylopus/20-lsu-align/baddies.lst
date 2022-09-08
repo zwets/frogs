@@ -1,0 +1,18 @@
+
+OK649437_bonaespei_158    ----------------------------------------------------------------agtttaacggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatagggactagtatcaatggcatcacgagggtttcactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggatta
+OK649438_bonaespei_159    -----------------------------------------------------------gactaagtttaacggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatagggactagtatcaatggcatcacgagggtttcactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggatta
+OK649444_grayii_230       -----------------------------------------------------------------------cggccgcggtaccctatccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaacggcatcacgagggtttaactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggattt
+OK649445_grayii_231       -----------------------------------------------------------------------cggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaatggcatcacgagggtttaactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggattt
+
+OK649460_merumontanus_716 ----------------------------------------------------------------------acggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaatggcatcacgagggtttcactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggatag
+OK649477_merumontanus_796 ---------------------------------------------------------------------tacggccgcgg-accctaaccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaatggcatcacgagggtttcactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggataa
+OK649479_bonaespei_830    --------------------------------------------------ctgcccggtgactaagtttaacggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatagggactagtatcaatggcatcacgagggtttcactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggatta
+
+and trim 48 left
+
+OK649492_grayii_854       ----------------------------------------------cagcctgcccggtgacaaagtttaacggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaacggcatcacgagggtttaactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggattt
+OK649490_grayii_852       ----------------------------------------------cagcctgcccggtgacaaagtttaacggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaacggcatcacgagggtttaactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggattt
+
+OK649442_grayii_225       gcctgcccggtgacaaagtttaacggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaacggcatcacgagggtttaactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggatttatctataagacgagaagaccccatggagctttaagcccaacagcaact
+OK649443_grayii_229       gcctgcccggtgacaaagtttaacggccgcggtaccctaaccgtgcgaaggtagcataatcacttgttctttaaatggggactagtatcaatggcatcacgagggtttaactgtctcctttctccaatcagtgaaactgatctccccgtgaagaagcggggatttaattataagacgagaagaccccatggagctttaagcccaacagcaact
+
